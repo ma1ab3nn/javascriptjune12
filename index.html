@@ -4,10 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <h1>8th May Lesson </h1>
-    <script src=script.js> </script>
-    
+<!-- COPY ANY OF THE img ELEMENTS FROM BELOW. BE SURE TO INCLUDE THE ALT ATTRIBUTE! -->
+<!-- Keep this out of the way to keep focus on img elements above  -->
+
+<!-- Set up the search button -->
+<input type="text" id="searchInput" placeholder="Search...">
+
+<!-- Set up the "animal" buttons -->
+<div>
+    <button class="buttonFilter" animal="Bear" onclick="filterAnimals('Bear')">Bear</button>
+    <button class="buttonFilter" animal="Dolphin" onclick="filterAnimals('Dolphin')">Dolphin</button>
+    <button class="buttonFilter" animal="Duck" onclick="filterAnimals('Duck')">Duck</button>
+    <button class="buttonFilter" animal="Frog" onclick="filterAnimals('Frog')">Frog</button>
+    <button class="buttonFilter" animal="all" onclick="filterAnimals('all')">Show All</button>
+</div>
+
+<!-- Set up the helper text -->
+
+<div id="helperText"></div>
+
+
+<!-- Set up the animal images -->
+<div class="container">
+<div><img class="animal-container Bear" id="animal 0" loading="lazy" src="https://images.pexels.com/photos/158109/kodiak-brown-bear-adult-portrait-wildlife-158109.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Bear on a Body of Water "/></div>
+<div><img class="animal-container Bear" id="animal 1" loading="lazy" src="https://images.pexels.com/photos/35435/pexels-photo.jpg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Bear"/></div>
+ <div><img class="animal-container Bear" id="animal 2" loading="lazy" src="https://images.pexels.com/photos/1068554/pexels-photo-1068554.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Close-Up Photography of Grizzly Bear"/></div>
+ <div><img class="animal-container Bear"  id="animal 3" loading="lazy" src="https://images.pexels.com/photos/598966/pexels-photo-598966.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Grayscale Photo of Polar Bear Cub "/></div>
+ <div><img class="animal-container Dolphin" id="animal 4" loading="lazy" src="https://images.pexels.com/photos/64219/dolphin-marine-mammals-water-sea-64219.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Cute Dolphine Underwater "/></div>
+ <div><img class="animal-container Dolphin" id="animal 5" loading="lazy" src="https://images.pexels.com/photos/1986374/pexels-photo-1986374.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Gray Dolphin on Body of Water"/></div>
+ <div><img class="animal-container Dolphin" id="animal 6" loading="lazy" src="https://images.pexels.com/photos/225869/pexels-photo-225869.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Adorable Dolphins on Surface of Water"/></div>
+ <div><img class="animal-container Dolphin" id="animal 7" loading="lazy" src="https://images.pexels.com/photos/162079/dolphin-sea-marine-mammals-wise-162079.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Dolphin's Head in the Surface"/></div>
+ <div><img class="animal-container Duck" id="animal 8" loading="lazy" src="https://images.pexels.com/photos/162140/duckling-birds-yellow-fluffy-162140.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Duckling on Black Soil during Daytime"/></div>
+ <div><img class="animal-container Duck" id="animal 9" loading="lazy" src="https://images.pexels.com/photos/660266/pexels-photo-660266.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Depth of Field Photography of Mallard Duck on Body of Water"/></div>
+ <div><img class="animal-container Duck" id="animal 10" loading="lazy" src="https://images.pexels.com/photos/209035/pexels-photo-209035.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown White and Blue Duck"/></div>
+ <div><img class="animal-container Duck" id="animal 11" loading="lazy" src="https://images.pexels.com/photos/833687/pexels-photo-833687.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Green and Gray Mallard Duck"/></div>
+ <div><img class="animal-container Frog" id="animal 12" loading="lazy" src="https://images.pexels.com/photos/70083/frog-macro-amphibian-green-70083.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Green Frog"/></div>
+ <div><img class="animal-container Frog" id="animal 13" loading="lazy" src="https://images.pexels.com/photos/76957/tree-frog-frog-red-eyed-amphibian-76957.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Green Blue Yellow and Orange Frog on Green Leaf"/></div>
+ <div><img class="animal-container Frog" id="animal 14" loading="lazy" src="https://images.pexels.com/photos/45863/frog-butterfly-pond-mirroring-45863.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Macro Photography of Green Frog"/></div>
+ <div><img class="animal-container Frog" id="animal 15" loading="lazy" src="https://images.pexels.com/photos/35669/hyla-meridionalis-the-frog-amphibians.jpg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Shallow Focus Photography of Green Frog"/></div>
+</div>
+<small>Photos provided by <a href="https://www.pexels.com">Pexels</a>.</small>
+
+<!-- Link to the javascript file -->
+
+<script src=script.js> </script>
 </body>
 </html>
